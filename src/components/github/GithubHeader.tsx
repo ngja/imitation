@@ -1,16 +1,17 @@
 import {Component} from "solid-js";
 import {Icon} from "@iconify-icon/solid";
+import GithubIconA from "./GithubIconA";
 
 const GithubHeader: Component = () => {
   return (
     <header class="bg-github-light-default-header shadow-[inset_0_-1px_#d0d7de]">
-      <div class="flex justify-between">
+      <div class="flex justify-between items-center">
 
         {/* left */}
         <div class="flex">
           {/* hamburger icon */}
-          <div>
-            <Icon icon="quill:hamburger" class="text-gray-400 text-4xl" />
+          <div class="text-rose-900">
+            <Icon icon="quill:hamburger" />
           </div>
           {/* Github Logo & Dashboard */}
           <div class="flex">
@@ -22,24 +23,24 @@ const GithubHeader: Component = () => {
         {/* right */}
         <div>
           {/* search bar & other logo icon*/}
-          <div class="flex">
-            <div>
+          <div class="flex m-2 p-2">
+            <div class="mx-2">
               search bar
             </div>
-            <div>
+            <div class="mx-2">
               |
             </div>
             <div>
-              create new...
+              create new
             </div>
-            <div>
-              issues
+            <div class="mx-2">
+              <GithubIconA link="/github/issue" icon="octicon:issue-opened-24"/>
             </div>
-            <div>
-              pull request
+            <div class="mx-2">
+              <GithubIconA link="/github/pull-request" icon="octicon:git-pull-request-24" />
             </div>
-            <div>
-              noti
+            <div class="mx-2">
+              <GithubIconA link="/github/notifications" icon="octicon:inbox-24"/>
             </div>
             <div>
               profile
