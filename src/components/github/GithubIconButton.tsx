@@ -8,4 +8,4 @@ const GithubIconButton: Component = () => {
   )
 }
 
-return GithubIconButton;
+export default GithubIconButton;

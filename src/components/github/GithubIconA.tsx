@@ -9,7 +9,7 @@ const GithubIconA: Component<{link: string, icon: string, color?: string, size?:
     size: "text-xl"
   }, props)
 
-  const styles = `p-1 border-solid border-2 border-github-light-default rounded-lg ${merged.color} ${merged.size}`
+  const styles = `p-1 border-solid border-2 border-github-light-default rounded-md ${merged.color} ${merged.size}`
 
   return (
     <div class={styles}>

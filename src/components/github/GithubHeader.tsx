@@ -1,6 +1,7 @@
 import {Component} from "solid-js";
 import {Icon} from "@iconify-icon/solid";
 import GithubIconA from "./GithubIconA";
+import GithubSearchButton from "./GithubSearchButton";
 
 const GithubHeader: Component = () => {
   return (
@@ -25,7 +26,7 @@ const GithubHeader: Component = () => {
           {/* search bar & other logo icon*/}
           <div class="flex m-2 p-2">
             <div class="mx-2">
-              search bar
+              <GithubSearchButton />
             </div>
             <div class="mx-2">
               |
