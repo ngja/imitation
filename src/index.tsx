@@ -7,6 +7,7 @@ import Home from "./pages/Home";
 import TailwindPlayground from "./pages/TailwindPlayground";
 import NotFound from "./pages/NotFound";
 import Github from "./pages/Github";
+import DiscordInspiredAnimatedNavbar from "./pages/tutorial/DiscordInspiredAnimatedNavbar";
 
 const root = document.getElementById('root');
 
@@ -21,6 +22,8 @@ render(() =>
     <Route path="/" component={Home}/>
     <Route path="/tailwind-playground" component={TailwindPlayground}/>
     <Route path="/github" component={Github}/>
+
+    <Route path="/tutorial/1" component={DiscordInspiredAnimatedNavbar}/>
     <Route path="*404" component={NotFound}/>
   </Router>
   , root!);
