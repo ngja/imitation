@@ -17,3 +17,7 @@
         transition-all duration-100 scale-0 origin-left;
     }
 }
+
+.external {
+    @apply w-20 h-10 bg-amber-900
+}
