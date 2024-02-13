@@ -1,7 +1,7 @@
 import {Component} from "solid-js";
 import {Icon} from "@iconify-icon/solid";
-import GithubIconA from "./GithubIconA";
-import GithubSearchButton from "./GithubSearchButton";
+import GithubIconA from "../common/GithubIconA";
+import GithubSearchButton from "../common/GithubSearchButton";
 
 const GithubHeader: Component = () => {
   return (

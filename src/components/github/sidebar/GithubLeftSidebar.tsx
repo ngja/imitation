@@ -1,6 +1,12 @@
-import {Component} from "solid-js";
+import {Component, For} from "solid-js";
+import {repo} from "../../../db/repo"
+import GithubSidebarRepository from "./GithubSidebarRepository";
 
 const GithubLeftSidebar: Component = () => {
+
+
+
+
   return (
     <div class="mx-6 mt-3">
       <div>
@@ -13,20 +19,14 @@ const GithubLeftSidebar: Component = () => {
             <input class="border-2" placeholder="Find a repository..."/>
           </div>
           <div>
-            {/* TODO repository 영역 component 생성 후 for 문으로 처리 필요*/}
             <ul>
-              <li>
-                <div class="flex">
-                  <a href="">icon</a>
-                  <div>ngja/ps</div>
-                </div>
-              </li>
-              <li>
-                <div class="flex">
-                  <a href="">icon</a>
-                  <div>ngja/imitation</div>
-                </div>
-              </li>
+              <For each={repo}>
+                {(r, i) =>
+                <li>
+                  <GithubSidebarRepository link={r.link} name={r.name} />
+                </li>
+                }
+              </For>
             </ul>
           </div>
         </div>

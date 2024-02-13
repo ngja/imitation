@@ -1,8 +1,8 @@
 import {Component} from "solid-js";
-import GithubHeader from "../components/github/GithubHeader";
-import GithubLeftSidebar from "../components/github/GithubLeftSidebar";
-import GithubFeed from "../components/github/GithubFeed";
-import GithubRightSidebar from "../components/github/GithubRightSidebar";
+import GithubHeader from "../components/github/header/GithubHeader";
+import GithubLeftSidebar from "../components/github/sidebar/GithubLeftSidebar";
+import GithubFeed from "../components/github/feed/GithubFeed";
+import GithubRightSidebar from "../components/github/sidebar/GithubRightSidebar";
 
 const Github: Component = () => {
   return (
