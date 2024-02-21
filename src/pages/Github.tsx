@@ -9,17 +9,19 @@ const Github: Component = () => {
     <div>
       <GithubHeader/>
       <main class="flex h-screen">
-        <aside class="w-[320px] border-r-2">
+        <aside class="w-[320px] min-w-[320px] border-r-2">
           <GithubLeftSidebar />
         </aside>
 
-        <div class="flex">
-          <div>
-            <GithubFeed />
+        <div class="w-4/6 m-4">
+          <div class="flex justify-center w-full gap-6">
+            <div class="max-w-[900px] w-full border-4">
+              <GithubFeed/>
+            </div>
+            <div class="max-w-[356px] border-4">
+              <GithubRightSidebar/>
+            </div>
           </div>
-          <aside>
-            <GithubRightSidebar />
-          </aside>
         </div>
       </main>
     </div>
