@@ -9,6 +9,7 @@ import NotFound from "./pages/NotFound";
 import Github from "./pages/Github";
 import DiscordInspiredAnimatedNavbar from "./pages/tutorial/DiscordInspiredAnimatedNavbar";
 import TailwindTricks from "./pages/tutorial/TailwindTricks";
+import TailwindClasses10 from "./pages/tutorial/TailwindClasses10";
 
 const root = document.getElementById('root');
 
@@ -26,6 +27,7 @@ render(() =>
 
     <Route path="/tutorial/1" component={DiscordInspiredAnimatedNavbar}/>
     <Route path="/tutorial/2" component={TailwindTricks}/>
+    <Route path="/tutorial/3" component={TailwindClasses10}/>
     <Route path="*404" component={NotFound}/>
   </Router>
   , root!);
